@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="pictures/P.png">
+    <script src="https://kit.fontawesome.com/6b48371b29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="pictures\bptr.png" alt="logo" class="logo"  width="90%" height="5%"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About me</a></li>
+                    <li><a href="#certificates" onclick="closemenu()">Certificates</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+        </div>
+        <div class="header-text">
+            <h1>Hi,<br> I am <span>Pavan</span> Tirupathi Reddy</h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pictures/pavan1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>About Me</span></h1>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Bhumpalli Pavan Tirupathi Reddy, originally from Guntur. 
+                        Currently, I am pursuing a degree in Computer Science 
+                        at the esteemed Gayatri Vidya Parishad College of Engineering (Autonomous) in Visakhapatnam. 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My unrelenting enthusiasm and 
+                        fervor drive me to explore solutions to intricate challenges. 
+                        Beyond my academic pursuits, I possess a profound passion for the culinary arts, 
+                        a deep appreciation for the melodious rhythms of music, and an enduring love for 
+                        the cultivation and nurturing of various plant species.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span> <br> C, Java, Javascript, Python</li>
+                            <li><span>Web Development</span><br>HTML, CSS</li>
+                            <li><span>Core Subjects</span><br>DBMS, OS, OOP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>AWS Cloud Internship  (2023)</span> <br>learned and worked with AWS services like EC2, S3, RDS. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech (2021-Present)</span> <br>Studying CSE at Gayatri Vidya Parishad College of Engineering(A), Visakhapatnam <br>CGPA: 9.2</li>
+                            <li><span>Intermediate (2019-2021)</span><br>Studied MPC at Sri Chaitanya Jr College, Guntur <br>Marks: 990/1000</li>
+                            <li><span>10th class (2018-2019)</span><br>Studied at The Central School, Guntur <br>GPA: 10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title"><span>Certifications</span></h1>
+            <div class="certificates-list">
+                
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development using React Js and Node Js</h2>
+                    <p>A course certification from GeeksForGeeks</p>
+                    <a href="c1.html" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Nptel Java Certification</h2>
+                    <p>Scored Elite + Silver in Nptel Java Examination </p>
+                    <a href="c2.html" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Foundation Course</h2>
+                    <p>A certification from Infosys SpringBoard</p>
+                    <a href="c3.html" target="_blank">VIEW CERTIFICATE</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"><span>Projects</span></h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Portfolio</h2>
+                    <p>Used HTML, CSS and JS  and developed a simple portfolio website</p>
+                    <a href="#">VIEW CODE</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Portfolio</h2>
+                    <p>Used HTML, CSS and JS  and developed a simple portfolio website</p>
+                    <a href="#">VIEW LIVE</a> <br>
+                    <a href="#">VIEW CODE</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title"><span>Contact</span></h1>
+            <div class="row">
+                <div class="contact-left">
+                    
+                    <p><i class="fa-regular fa-envelope"></i>pavanbhumpalli@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9908152921</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/pavanbhumpalli1/?next=%2F"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/bhumpallipavan"target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pavan-bhumpalli-6ab593241/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume">
+            <h1><span>Resume</span></h1>
+            <a href="pictures/resume.jpg"  download class="btn btn2">Download Resume</a>
+        </div>
+    </div>
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    // Add the "active-link" class to the clicked tab link
+    event.currentTarget.classList.add("active-link");
+
+    // Find the corresponding tab content and add the "active-tab" class
+    var tabContentId = tabname.toLowerCase();
+    document.getElementById(tabContentId).classList.add("active-tab");
+}
+
+    </script>
+<script>
+    var sidemen=document.getElementById("sidemenu")
+    function openmenu()
+    {
+        //console.log("Open menu clicked");
+        sidemen.style.right="0";
+    }
+    function closemenu()
+    {
+        sidemen.style.right="-200px";
+    }
+</script>
+</body>
+</html>
